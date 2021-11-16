@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Jani Mladenovski</title>
@@ -10,8 +11,25 @@
 fieldset{ border-radius: 3ex; border-color: blue; border-width: 1ex;}
 input {background-color: lightgrey;}
 header{font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: darkkhaki;}
+.lista
+{
+    display: inline;
+}
+.comments
+{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    background-color: whitesmoke; 
+    font-family:  arial, helvetica, sans-serif;
+    box-shadow: 5px whitesmoke blur;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
-div {
+.klasa {
         width: 250px;
         height: 300px;
         
@@ -30,34 +48,35 @@ div {
       }
 
    </style>
-
+<script src="javascript.js">
+</script>
 </head>
 <body>
     <fieldset>
     <h1>Welcome </h1>
-   <div>
+   <div class="klasa">
     <img src="jm.jpg" width="250" heigth="300" alt="jm ">
    </div>
     <p><strong>Home</strong></p>
     <ul>
-        <li><a href="#Aboutme">About me</a></li>
+        <li ><a href="#Aboutme">About me</a></li>
         <ul>
             <li><a href="#CV">Short CV</a></li>
         </ul>
-        <li><a href="#Favthings">Favourite things</a></li>
+        <li ><a href="#Favthings">Favourite things</a></li>
         <ul>
             <li><a href="#Music">Music</a></li>
             <li><a href="#Movies">Movies</a></li>
             <li><a href="#food">Food</a></li>
         </ul>
        
-        <li><a href="#Gallery">Gallery</a></li>
+        <li ><a href="#Gallery">Gallery</a></li>
         
-        <li>
+        <li >
             <a href="#Blog">Blog</a>
         </li>
-        <li><a href="#Survey">Survey</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li ><a href="#Survey">Survey</a></li>
+        <li ><a href="#Contact">Contact</a></li>
     </ul>
     
     <h1 id="Aboutme">About me</h1>
@@ -69,8 +88,7 @@ div {
             Hi,<br>
             I'm Jani Mladenovski and first of all i would like to thank you for visiting my web page. Here are some things you should know about me.
             Currently i am a student at the Faculty of electrical engineering and information tehnologies. I study Computer tehnologies and engineering.
-            This is my third year there and i can say that it is a good choice for anybody who likes to be a programmer. It is a little bit difficult for me
-            but at the end i pass all the exams. 
+            This is my third year there and i can say that it is a good choice for anybody who likes to be a programmer.
         </p>
      </fieldset><br>
 <fieldset>
@@ -85,31 +103,109 @@ div {
         <li><a href="https://www.youtube.com/watch?v=-0vzIL5CQTk">Old School</a></li>
         <li><a href="https://www.youtube.com/watch?v=ERXAOHIbQLw">Ex YU</a></li>
         <li><a href="https://www.youtube.com/watch?v=utNf36klsDw">Macedonian evergreen</a></li>
-        <form action="proektna1.html">
-            <label>
-                <textarea name="comment" rows="4" cols="50" placeholder="Leave any comments about the music here"  required></textarea>
-            </label>
-            <input type="submit" value="Leave comment">
-        </form>
     </ul>
+           
+    <div>
+        <h2 id = "Blog">Comments</h2>
+        <p> <label>Enter your name:<br>
+          <textarea id = "naslov" name = "comments" rows = "1" cols="50"></textarea></label>
+         </p>
+       <p> <label>Write your comment here:<br>
+        <textarea id = "blog" name = "comments" rows = "8" cols="50"></textarea></label>
+        <input id ="datum" type="datetime-local" name = "time">
+       </p>
+      
+       <button id = "kopce">Leave comment</button>
+    </div> <br>
+    <div id = "bl">
+    </div> 
+    
     <br>
     <hr size="1" width="100%" color="grey" ><br>
     <strong id="Movies">Now here you can watch some of the movies i like.</strong>
     <ul>
-        <li><a href="https://fmovies.to/film/inception.zlzm/2o11v8l">Inception</a></li>
-        <br> <img src="inception.jpg" width="150" heigth="130" alt="inception ">
-        <li><a href="https://fmovies.to/film/snatch.qxjw/kwy485w">Snatch</a></li>
-        <br> <img src="Snatch.jpg" width="150" heigth="130" alt="snatch ">
+        <li><a href="https://fmovies.to/film/inception.zlzm/2o11v8l">Inception</a> <br> 
+        <img src="inception.jpg" width="150" heigth="130" alt="inception "><br>
+        <input id="like2" type="submit" value="Like">
+        <p id="ams2">
+            0 Likes
+        </p>
+        <div>
+            <h2 id = "Blog1">Comments</h2>
+            <p> <label>Enter your name:<br>
+              <textarea id = "naslov1" name = "comments" rows = "1" cols="50"></textarea></label>
+             </p>
+           <p> <label>Write your comment here:<br>
+            <textarea id = "blog1" name = "comments" rows = "8" cols="50"></textarea></label>
+            <input id ="datum1" type="datetime-local" name = "time">
+           </p>
+          
+           <button id = "kopce1">Leave comment</button>
+        </div> <br>
+        <div id = "bl1">
+        </div>
+        <li ><a href="https://fmovies.to/film/snatch.qxjw/kwy485w">Snatch</a><br>
+        <img src="Snatch.jpg" width="150" heigth="130" alt="snatch "><br> 
+        <input id="like3" type="submit" value="Like">
+        <p id="ams3">
+            0 Likes
+        </p>
+        <div>
+            <h2 id = "Blog2">Comments</h2>
+            <p> <label>Enter your name:<br>
+              <textarea id = "naslov2" name = "comments" rows = "1" cols="50"></textarea></label>
+             </p>
+           <p> <label>Write your comment here:<br>
+            <textarea id = "blog2" name = "comments" rows = "8" cols="50"></textarea></label>
+            <input id ="datum2" type="datetime-local" name = "time">
+           </p>
+          
+           <button id = "kopce2">Leave comment</button>
+        </div> <br>
+        <div id = "bl2">
+        </div>
         <li><a href="https://fmovies.to/film/the-gentlemen.rw43y/9okvjrm">The Gentleman</a></li>
-        <br> <img src="thegentleman.jpg" width="150" heigth="130" alt="gentlemen ">
+        <br> <img src="thegentleman.jpg" width="150" heigth="130" alt="gentlemen "><br>
+        <input id="like4" type="submit" value="Like">
+        <p id="ams4">
+            0 Likes
+        </p>
+       
+        <div>
+            <h2 id = "Blog3">Comments</h2>
+            <p> <label>Enter your name:<br>
+              <textarea id = "naslov3" name = "comments" rows = "1" cols="50"></textarea></label>
+             </p>
+           <p> <label>Write your comment here:<br>
+            <textarea id = "blog3" name = "comments" rows = "8" cols="50"></textarea></label>
+            <input id ="datum3" type="datetime-local" name = "time">
+           </p>
+          
+           <button id = "kopce3">Leave comment</button>
+        </div> <br>
+        <div id = "bl3">
+        </div>
         <li><a href="https://fmovies.to/film/catch-me-if-you-can.ykw0/jvxv3wn">Catch me if you can</a></li>
-        <br> <img src="Catch_Me_If_You_Can_2002_movie.jpg" width="150" heigth="130" alt="catch-me-if-you-can ">
-        <form action="proektna1.html">
-            <label>
-                <textarea name="comment" rows="4" cols="50" placeholder="Leave any comments about the movies here"  required></textarea>
-            </label>
-            <input type="submit" value="Leave comment">
-        </form>
+        <br> <img src="Catch_Me_If_You_Can_2002_movie.jpg" width="150" heigth="130" alt="catch-me-if-you-can "><br>
+        <input id="like5" type="submit" value="Like">
+        <p id="ams5">
+            0 Likes
+        </p>
+        <div>
+            <h2 id = "Blog4">Comments</h2>
+            <p> <label>Enter your name:<br>
+              <textarea id = "naslov4" name = "comments" rows = "1" cols="50"></textarea></label>
+             </p>
+           <p> <label>Write your comment here:<br>
+            <textarea id = "blog4" name = "comments" rows = "8" cols="50"></textarea></label>
+            <input id ="datum4" type="datetime-local" name = "time">
+           </p>
+          
+           <button id = "kopce4">Leave comment</button>
+        </div> <br>
+        <div id = "bl4">
+        </div>
+        
     </ul>
     <br>
     <hr size="1" width="100%" color="grey" ><br>
@@ -130,13 +226,30 @@ div {
     <legend id="Gallery">Gallery</legend>
     <strong>Some pictures of me</strong><br>
     <img src="Amsterdam.jpg"  width="150" heigth="200" alt="Amsterdam"><em>Me in Amsterdam</em><br>
-    <img src="family.jpg" width="200" heigth="230"  alt="family"><em>Family</em>
-    <form action="proektna1.html">
-        <label>
-            <textarea name="comment" rows="4" cols="50" placeholder="Leave any comments about the gallery here"  required></textarea>
-        </label>
-        <input type="submit" value="Leave comment">
-    </form>
+    <input id="like" type="submit" value="Like">
+    <p id="ams">
+        0 Likes
+    </p>
+    <img src="family.jpg" width="200" heigth="230"  alt="family"><em>Family</em><br>
+    <input id="like1" type="submit" value="Like">
+    <p id="ams1">
+        0 Likes
+    </p>
+    <div>
+        
+        <p> 
+          <textarea id = "naslov5" name = "comments" rows = "1" cols="50" placeholder="Write your name here"></textarea>
+         </p>
+       <p> 
+        <textarea id = "blog5" name = "comments" rows = "8" cols="50" placeholder="Write your comments here"></textarea>
+        <input id ="datum5" type="datetime-local" name = "time">
+       </p>
+      
+       <button id = "kopce5">Leave comment</button>
+    </div> <br>
+    <div id = "bl5">
+    </div>
+    
 </fieldset>
 <fieldset>
     <legend id="Blog">Blog</legend> 
@@ -169,7 +282,6 @@ div {
 </fieldset>
 <fieldset>
     <legend id="Contact">Contact</legend>
-    <p>Telephone : 071 555 333</p>
     <p>Email : jmladenovski64@gmail.com</p>
     <p>Facebok : https://www.facebook.com/jani.mladenovski.7</p>
 </fieldset>
