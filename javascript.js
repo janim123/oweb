@@ -37,22 +37,22 @@ function funkc(){
     let pom3 = document.getElementById("datum").value;
 
     const tatko = document.createElement("div");
-    let val1 = document.createElement("h2");
-    let val2 = document.createElement("div");
+    let val1 = document.createElement("div");
+    let val2 = document.createElement("h4");
     let val3 = document.createElement("div");
-
+    val2.style.color="navy";
     val3.style.float = "right";
     val3.style.color = "grey";
 
    
 
-    val1.innerHTML = pom1;
+    val1.innerHTML = pom1 + "      <em>posted this on</em>  " + pom3;
     val2.innerHTML = pom2;
-    val3.innerHTML = pom3;
+    
     
     tatko.appendChild(val1);
     tatko.appendChild(val2);
-    tatko.appendChild(val3);
+ 
 
     document.getElementById("bl").appendChild(tatko);
 
@@ -63,8 +63,8 @@ function funkc1(){
     let pom3 = document.getElementById("datum1").value;
 
     const tatko = document.createElement("div");
-    let val1 = document.createElement("h2");
-    let val2 = document.createElement("div");
+    let val1 = document.createElement("div");
+    let val2 = document.createElement("h4");
     let val3 = document.createElement("div");
 
     val3.style.float = "right";
@@ -72,9 +72,9 @@ function funkc1(){
 
    
 
-    val1.innerHTML = pom1;
+    val1.innerHTML = pom1 + "      <em>posted this on</em>  " + pom3;
     val2.innerHTML = pom2;
-    val3.innerHTML = pom3;
+    
     
     tatko.appendChild(val1);
     tatko.appendChild(val2);
@@ -89,18 +89,15 @@ function funkc2(){
     let pom3 = document.getElementById("datum2").value;
 
     const tatko = document.createElement("div");
-    let val1 = document.createElement("h2");
-    let val2 = document.createElement("div");
+    let val1 = document.createElement("div");
+    let val2 = document.createElement("h4");
     let val3 = document.createElement("div");
-
-    val3.style.float = "right";
-    val3.style.color = "grey";
 
    
 
-    val1.innerHTML = pom1;
+    val1.innerHTML = pom1 + "      <em>posted this on</em>  " + pom3;
     val2.innerHTML = pom2;
-    val3.innerHTML = pom3;
+   
     
     tatko.appendChild(val1);
     tatko.appendChild(val2);
@@ -115,16 +112,14 @@ function funkc4(){
     let pom3 = document.getElementById("datum4").value;
 
     const tatko = document.createElement("div");
-    let val1 = document.createElement("h2");
-    let val2 = document.createElement("div");
+    let val1 = document.createElement("div");
+    let val2 = document.createElement("h4");
     let val3 = document.createElement("div");
 
-    val3.style.float = "right";
-    val3.style.color = "grey";
-
+   
    
 
-    val1.innerHTML = pom1;
+    val1.innerHTML = pom1 + "      <em>posted this on</em>  " + pom3;
     val2.innerHTML = pom2;
     val3.innerHTML = pom3;
     
@@ -141,8 +136,8 @@ function funkc5(){
     let pom3 = document.getElementById("datum5").value;
 
     const tatko = document.createElement("div");
-    let val1 = document.createElement("h2");
-    let val2 = document.createElement("div");
+    let val1 = document.createElement("div");
+    let val2 = document.createElement("h4");
     let val3 = document.createElement("div");
 
     val3.style.float = "right";
@@ -150,7 +145,7 @@ function funkc5(){
 
    
 
-    val1.innerHTML = pom1;
+    val1.innerHTML = pom1 + "      <em>posted this on</em>  " + pom3;
     val2.innerHTML = pom2;
     val3.innerHTML = pom3;
     
@@ -167,8 +162,8 @@ function funkc3(){
     let pom3 = document.getElementById("datum3").value;
 
     const tatko = document.createElement("div");
-    let val1 = document.createElement("h2");
-    let val2 = document.createElement("div");
+    let val1 = document.createElement("div");
+    let val2 = document.createElement("h4");
     let val3 = document.createElement("div");
 
     val3.style.float = "right";
@@ -176,7 +171,7 @@ function funkc3(){
 
    
 
-    val1.innerHTML = pom1;
+    val1.innerHTML = pom1 + "      <em>posted this on</em>  " + pom3;
     val2.innerHTML = pom2;
     val3.innerHTML = pom3;
     

@@ -1,0 +1,194 @@
+
+        body{
+            font: 15px/1.5 Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            
+            background-color:gold;
+            background-image: linear-gradient(to right,gold,rgba(255, 0, 0, 0.4));;
+            color: navy;
+          }
+          
+          .container{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+          }
+          .home{
+              margin-left: 5%;
+              font-size:50px;
+          }
+          
+          ul{
+            margin: 0;
+            padding: 0;
+          }
+          
+          header{
+            background: lightblue;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: blue 3px solid;
+          }
+          
+          header a{
+            color: blue;
+            text-decoration: none;
+            
+            font-size: 16px;
+          }
+          
+          header li{
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+          }
+          
+          header #branding{
+            float: left;
+          }
+          
+          header #branding h1{
+            margin: 0;
+            color: blue;
+          }
+          
+          header nav{
+            float: right;
+            margin-top: 10px;
+          }
+          
+          header .highlight, header .current a{
+            color: navy;
+            font-weight: bold;
+          }
+          
+          header a:hover{
+            color: black;
+            font-weight: bold;
+          }
+        
+          #showcase h1{
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+          }
+          
+          #showcase p{
+            font-size: 20px;
+          }
+          
+          footer{
+            padding: 20px;
+            color: blue;
+            background-color: rgb(228, 253, 5);
+            text-align: center;
+            border-top: red 3px solid;
+          }
+          
+          #main_box {
+            text-align: left;
+          }
+          
+          #submit {
+            border: 2px groove lightblue;
+            color: navy;
+            background: lightblue;
+            margin-top: 5px;
+            font-weight: bold;
+          }
+          
+          table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+          
+          #sub {background-color: rgb(13, 54, 54);
+                color: rgb(7, 22, 22);}
+
+          .matura{
+              margin: 3%;
+              float: right;
+
+          }
+          .p{
+              margin: 2%;
+              font-size: x-large;
+          }
+          #muzika{
+              text-align: center;
+              margin: 3px;
+          }
+          #Music{
+          color:navy ;
+            font-size:40px;
+          }
+          .musika{
+              color: rgb(24, 24, 199);
+              font-size: x-large;
+              text-decoration: none;
+              
+          }
+          .musika a{
+            text-decoration: none;
+            color: navy;
+          }
+          #Movies{
+            color:navy ;
+              font-size:40px;
+              text-align: center;
+            }
+            #filmovi{
+               display: flex; 
+               justify-content: space-evenly;
+               align-items: center;
+            }
+            .sliki
+                {
+                    text-align: center;
+                    margin: 3px;
+                }
+            .sliki img{
+                height: 700;
+                width: 500;
+                max-width: 500;
+                max-height: 700;
+                min-height: 700;
+                min-width: 500;
+            }
+            .comments{
+                text-align: center;
+                background-color:paleturquoise;
+            }
+            .comments div,h3{
+               margin-left: 1%;
+                text-align: left;
+              
+            }
+            .survey{
+                background-color: paleturquoise;
+                border-radius: 5ex;
+                color: navy;
+                text-align: center;
+            }
+            .survey img{
+                width: 4ex;
+                height: 4ex;
+            }
+            .blogs{
+              background-color: palegreen;
+              text-align: left;
+              margin: 1ex;
+              border-radius: 5ex;
+
+            }
+            .search{
+              float: left;
+              display: inline;
+              padding: 0 20px 0 20px;
+            }
+            #search{
+              float:right;
+              margin: 2%;
+            }
